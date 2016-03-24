@@ -4,6 +4,7 @@ import lightning.mvc.*;
 import static lightning.mvc.Context.*;
 import static lightning.mvc.HTTPMethod.*;
 
+@Controller
 public class QuizController {
   @Route(path="/", methods={GET})
   public String handleHome() throws Exception {
