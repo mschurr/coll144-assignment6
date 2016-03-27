@@ -1,8 +1,8 @@
 package a6.controllers;
 
-import lightning.mvc.*;
-import static lightning.mvc.Context.*;
-import static lightning.mvc.HTTPMethod.*;
+import lightning.ann.*;
+import static lightning.enums.HTTPMethod.*;
+import static lightning.server.Context.*;
 
 @Controller
 public class QuizController {
