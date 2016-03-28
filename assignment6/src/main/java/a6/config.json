@@ -1,0 +1,23 @@
+{
+    "enable_debug_mode": true,
+    "auto_reload_prefixes": [
+        "a6"
+    ],
+    "scan_prefixes": [
+        "a6",
+        "lightning.examples.cas"
+    ],
+    "server": {
+        "port": 8080,
+        "hmac_key": "LONG_RANDOM_SOMETHING",
+        "static_files_path": "a6/assets",
+        "template_files_path": "a6/templates"
+    },
+    "db": {
+        "host": "localhost",
+        "port": 3306,
+        "username": "coll144",
+        "password": "root",
+        "name": "assignment6"
+    }
+}
