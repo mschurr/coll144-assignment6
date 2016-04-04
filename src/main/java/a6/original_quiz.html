@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Assignment 2 Sample Solution</title>
+	</head>
+	<body>
+		<form method="POST" action="http://local.dev/quiz">
+
+			<!-- Name, Email, Year -->
+			<p><strong>Name</strong>:</p>
+			<p><input type="text" name="name" /></p>
+			<p><strong>Email</strong>:</p>
+			<p><input type="text" name="email" /></p>
+			<p><strong>Matriculation Year</strong>:</p>
+			<p><select name="matriculation_year">
+				<option>2010</option>
+				<option>2011</option>
+				<option>2012</option>
+				<option>2013</option>
+				<option>2014</option>
+				<option>2015</option>
+			</select></p>
+
+			<!-- Instructions -->
+			<hr />
+			<p>Please answer the following questions to the best of your knowledge.</p>
+
+			<!-- Questions -->
+			<p><strong>Question #1</strong></p>
+			<p>In what year was the Declaration of Independence written?</p>
+			<p><input type="text" name="q1" /></p>
+
+			<p><strong>Question #2</strong></p>
+			<p>Choose the person(s) that have held the office of President of the United States:</p>
+			<p><label><input type="checkbox" name="q2" value="1" />George W. Washington</label></p>
+			<p><label><input type="checkbox" name="q2" value="2" />Hilary Clinton</label></p>
+			<p><label><input type="checkbox" name="q2" value="3" />John F. Kennedy</label></p>
+			<p><label><input type="checkbox" name="q2" value="4" />Ulysses S. Grant</label></p>
+
+			<p><strong>Question #3</strong></p>
+			<p>What was the first state to ratify the U.S. Constitution?</p>
+			<p><label><input type="radio" name="q3" value="1" />Pennsylvania</label></p>
+			<p><label><input type="radio" name="q3" value="2" />Georgia</label></p>
+			<p><label><input type="radio" name="q3" value="3" />Delaware</label></p>
+			<p><label><input type="radio" name="q3" value="4" />Connecticut</label></p>
+
+			<p><strong>Question #4</strong></p>
+			<p>The Statue of Liberty was a gift from which country?</p>
+			<p><label><input type="radio" name="q4" value="1" />England</label></p>
+			<p><label><input type="radio" name="q4" value="2" />France</label></p>
+			<p><label><input type="radio" name="q4" value="3" />Canada</label></p>
+			<p><label><input type="radio" name="q4" value="4" />Spain</label></p>
+
+			<p><strong>Question #5</strong></p>
+			<p>Which of the following presidents held office during World War II?</p>
+			<p><label><input type="radio" name="q5" value="1" />Abraham Lincoln</label></p>
+			<p><label><input type="radio" name="q5" value="2" />Franklin D. Roosevelt</label></p>
+			<p><label><input type="radio" name="q5" value="3" />Richard Nixon</label></p>
+			<p><label><input type="radio" name="q5" value="4" />Andrew Johnson</label></p>
+
+			<!-- Honor Code & Submit -->
+			<hr />
+			<p><strong>Honor Code:</strong></p>
+			<p>In order to submit your test, you must copy the following honor code statement into the box below.</p>
+			<p><em>On my honor, I have neither given nor received unauthorized aid on this test.</em></p>
+			<p><textarea rows="2" cols="80" name="honor_code"></textarea><p>
+			<p><input type="submit" value="Grade My Test" /></p>
+		</form>
+	</body>
+</html>
