@@ -16,8 +16,8 @@
   "db": {
     "host": "localhost",
     "port": 3306,
-    "username": "httpd",
-    "password": "httpd",
-    "name": "tinyurlapp"
+    "username": "root",
+    "password": "coll144",
+    "name": "tinyurl"
   }
 }

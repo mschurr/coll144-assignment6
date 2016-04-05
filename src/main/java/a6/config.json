@@ -16,8 +16,8 @@
     "db": {
         "host": "localhost",
         "port": 3306,
-        "username": "coll144",
-        "password": "root",
+        "username": "root",
+        "password": "coll144",
         "name": "assignment6"
     }
 }
