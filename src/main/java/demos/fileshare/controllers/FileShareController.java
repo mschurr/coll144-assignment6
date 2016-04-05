@@ -28,15 +28,17 @@ public class FileShareController {
   @Route(path="/upload", methods={POST}) 
   @Multipart
   public void handleUpload() throws Exception {
+    badRequestIf(request().getPart("file").getSize() == 0);
+    
     try (NamedPreparedStatement query = db().prepare("INSERT INTO files (name, uploaded, downloads, content, last_downloaded) "
         + "VALUES (:name, :uploaded, :downloads, :content, :last_downloaded);")) {
-      query.setString("name", request().raw().getPart("file").getSubmittedFileName());
+      query.setString("name", request().getPart("file").getSubmittedFileName());
       query.setLong("uploaded", Time.now());
       query.setLong("downloads", 0);
       query.setLong("last_downloaded", 0);
       query.setBinaryStream("content", 
-          request().raw().getPart("file").getInputStream(),
-          request().raw().getPart("file").getSize());
+          request().getPart("file").getInputStream(),
+          request().getPart("file").getSize());
       
       long fileId = query.executeInsertAndClose();
       redirect("/f/" + fileId);
